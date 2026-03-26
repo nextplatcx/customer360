@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-sidebar: #0f172a;
+  --color-sidebar-hover: #1e293b;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+/* Module card */
+.module-card {
+  @apply bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+/* Action button */
+.action-link {
+  @apply text-blue-600 hover:text-blue-800 text-sm font-medium cursor-pointer hover:underline;
+}
+
+/* Trait bar */
+.trait-bar {
+  @apply h-2 rounded-full bg-gray-200 overflow-hidden;
+}
+
+.trait-bar-fill {
+  @apply h-full rounded-full transition-all duration-500;
+}
+
+/* Timeline connector */
+.timeline-dot {
+  @apply w-3 h-3 rounded-full border-2 border-white shadow-sm flex-shrink-0;
+}
+
+.timeline-line {
+  @apply w-0.5 bg-gray-200 flex-shrink-0;
+}
