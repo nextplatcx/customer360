@@ -28,10 +28,25 @@ export default function HomePage() {
         <Header role={role} onRoleChange={setRole} />
 
         <main className="p-6">
+          {/* BSS Dashboard Banner */}
+          <div className="max-w-3xl mx-auto mb-6 mt-8">
+            <div
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-5 flex items-center justify-between cursor-pointer hover:shadow-lg transition-shadow"
+              onClick={() => router.push('/bss/C-2024-00382')}
+            >
+              <div>
+                <p className="text-xs text-blue-200 font-medium mb-1">NEW</p>
+                <h3 className="text-base font-bold text-white">BSS Customer 360 (TO-BE)</h3>
+                <p className="text-xs text-blue-200 mt-0.5">3-Panel 레이아웃 · 서비스 포트폴리오 · 상담 인사이트</p>
+              </div>
+              <div className="text-white text-2xl">→</div>
+            </div>
+          </div>
+
           {/* Search Section */}
-          <div className="max-w-3xl mx-auto mb-10 mt-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">
-              Customer 360 Dashboard
+          <div className="max-w-3xl mx-auto mb-10">
+            <h2 className="text-xl font-bold text-gray-800 mb-2 text-center">
+              Customer 360 Dashboard (AS-IS)
             </h2>
             <p className="text-sm text-gray-500 text-center mb-6">
               고객 이름, 전화번호, 또는 고객 ID로 검색하세요
